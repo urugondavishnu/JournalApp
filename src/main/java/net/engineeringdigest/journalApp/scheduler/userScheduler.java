@@ -41,6 +41,7 @@ public class userScheduler {
             String entry = String.join(" ", filteredEntries);
             String sentiment = sentimentAnalysisService.getSentiment(entry);
             emailServices.sendEmail(user.getEmail(), "Sentiment for last 7 days", sentiment);
+
         }
     }
 
