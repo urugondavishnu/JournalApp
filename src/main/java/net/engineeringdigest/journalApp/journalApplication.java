@@ -23,6 +23,7 @@ public class journalApplication {
     @Bean
     public PlatformTransactionManager falana(MongoDatabaseFactory dbFactory){
         return new MongoTransactionManager(dbFactory);
+        
     }
 
     @Bean
